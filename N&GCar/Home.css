@@ -1,0 +1,40 @@
+html {
+    background-image: linear-gradient(rgba(220, 160, 40, 0.1), rgba(220, 160, 40, 0.5)),url(wallpaper.jpg);
+    height: 100%;
+    }
+
+.logo{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: -130px;
+    width: 125px;
+    height: 125px;
+    position: relative;
+    border-radius: 50%;
+}
+
+footer {
+	background-color: #DCA028;
+    position: absolute;
+    top: 0;
+    margin-left: 25%;
+    margin-right: 25%; 
+    width: 50%;
+}
+
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    
+}
+
+footer .container .logoo{
+	width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+}

@@ -1,0 +1,146 @@
+html {
+    background-image: linear-gradient(rgba(220, 160, 40, 0.5), rgba(220, 160, 40, 0.5)),url(wallpaper.jpg);
+    height: 100%;
+    }
+
+.logo{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: -130px;
+    width: 125px;
+    height: 125px;
+    position: relative;
+    border-radius: 50%;
+}
+
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+    font-family: 'Nunito', sans-serif;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+#container h1{
+    width: 53%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.form-check {
+    position: relative;
+    --border : #D1D5DB ;
+    --cursor : #89909E ;
+    --checked : #DCA028 ;
+    --checked-cursor : #FFF ;
+}
+
+.form-check input {
+    position: absolute;
+    opacity: 0;
+}
+
+.form-check label {
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    grid-template-areas: "checkbox label";
+    gap: .7em;
+}
+
+.form-check label::before,
+.form-check label::after {
+    grid-area: checkbox;
+    content: '';
+    display: block;
+}
+
+.form-check label::before {
+    width: 100%;
+    height: 1em;
+    border-radius: 1em;
+    border: solid 1px var(--border);
+    transition: background-color .3s, border-color .3s;
+}
+
+.form-check label::after {
+    position: relative;
+    left: 2px;
+    top: 2px;
+    width: calc(1em - 2px);
+    height: calc(1em - 2px);
+    background-color: var(--cursor);
+    border-radius: 50%;
+    background-color: var(--cursor);
+    transition: background-color .3s, transform .3s;
+}
+
+.form-check input:checked + label::before {
+    background-color: var(--checked);
+    border-color: var(--checked);
+}
+
+.form-check input:checked + label::after {
+    background-color: var(--checked-cursor);
+    transform: translateX(1em);
+}
+
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #DCA028;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #DCA028;
+    border: 1px solid #DCA028;
+}
+
+footer{
+    background-color: #DCA028;
+    position: absolute;
+    margin-top: 10%;
+}
+
+footer p, footer a{
+    color: #f6f5f0;
+    margin: 0 !important;
+    padding: 1em;
+     font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
